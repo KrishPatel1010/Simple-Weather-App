@@ -21,8 +21,31 @@ main{
     border-radius: 4px;
 }
 
+.search{
+    height: 40vh;
+}
 main #title{
     font-size: 20px;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.city-input{
+    width: 10rem;
+}
+.dropdown{
+    width: 10rem;
+    position: relative;
+    max-height: 150px;
+    display: none;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+.dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+}
+.dropdown-item.selected {
+    background-color: #e0e0e0; /* Change background color for the selected item */
+    font-weight: bold; /* Optional: make the text bold */
 }
