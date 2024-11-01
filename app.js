@@ -3,7 +3,6 @@ const url = "http://api.weatherapi.com/v1/current.json?key=da69256eeede4b40a1214
 const getWeatherData = async () => {
     const data = await fetch(url);
     const temp = await data.json();
-    console.log(temp);
     console.log(temp.location.name);
 }
 
