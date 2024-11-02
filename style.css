@@ -1,51 +1,121 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-body{
-    background-color: #9984D4;
+body {
+    background-color: #9984D4; /* Soft purple background */
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+    color: #333; /* Darker text for better readability */
 }
-
-main{
+#background-video {
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Makes sure the video covers the area without distortion */
+    z-index: -1; /* Places the video behind other content */
+}
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
 }
-.container{
+
+.container {
     width: 20rem;
-    height: 70vh;
-    border: 1px solid black;
-    border-radius: 4px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(227, 139, 139, 0.3); /* White background with transparency */
+    backdrop-filter: blur(3px); /* Blur effect */
+    padding: 20px;
+    color: #333; /* Text color */
 }
 
-.search{
-    height: 40vh;
-}
-main #title{
-    font-size: 20px;
+#title {
+    font-size: 24px; /* Slightly larger title */
     text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px; /* Space below the title */
+    color: #0F1020;/* A complementary color for the title */
 }
 
-.city-input{
-    width: 10rem;
+.city-input {
+    width: 100%; /* Full width for the input field */
+    padding: 10px 0px 10px 10px; /* Padding inside the input for better spacing */
+    border: 1px solid #464646; /* Light border */
+    border-radius: 5px; /* Rounded corners for the input */
+    font-size: 16px; /* Font size for better readability */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    background: rgba(255, 255, 255, 0.3); /* White background with transparency */
+    backdrop-filter: blur(3px);
 }
-.dropdown{
-    width: 10rem;
+.search-icon{
+    top: -28px;
+    left: 255px;
+    position: relative;
+}
+.city-input:focus {
+    border-color: #1f1928; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.dropdown {
+    width: 100%; /* Full width for the dropdown */
     position: relative;
     max-height: 150px;
     display: none;
-    border: 1px solid black;
+    border: 1px solid #ccc; /* Light border */
+    overflow-x: hidden;
     overflow-y: auto;
+    border-radius: 5px; /* Rounded corners for the dropdown */
+    background: white; /* White background for dropdown */
+    z-index: 1000; /* Ensure dropdown is on top */
+    background: rgba(201, 128, 128, 0.3); /* White background with transparency */
+    backdrop-filter: blur(3px);
 }
+
 .dropdown-item {
-    padding: 8px;
+    padding: 10px; /* More padding for clickable items */
     cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+    background: rgba(255, 255, 255, 0.3); /* White background with transparency */
+    backdrop-filter: blur(3px);
 }
+
+.dropdown-item:hover {
+    background-color: #d28484; /* Change background on hover */
+}
+
 .dropdown-item.selected {
-    background-color: #e0e0e0; /* Change background color for the selected item */
+    background-color: #e0e0e0; /* Selected item background */
     font-weight: bold; /* Optional: make the text bold */
+}
+
+
+.weather-data {
+    display: none; /* Initially hide the weather data section */
+    border: 1px solid #da8c8c; /* Light border for the weather data section */
+    height: auto; /* Change to auto for responsive height */
+    padding: 10px; /* Padding inside for spacing */
+    margin-top: 20px; /* Space above the weather data */
+    border-radius: 5px; /* Rounded corners for the weather data */
+    background: #f9f9f9; /* Light gray background for contrast */
+    text-align: center; /* Center align text inside */
+    background: rgba(255, 255, 255, 0.3); /* White background with transparency */
+    backdrop-filter: blur(3px);
+    font-weight: 600;
+}
+
+
+.weather-img {
+    border: 1px solid rgb(103, 83, 83);
+    max-width: 100%; /* Ensure image fits well */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-top: 10px; /* Space above the image */
 }
