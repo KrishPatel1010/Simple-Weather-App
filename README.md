@@ -46,7 +46,14 @@ Welcome to **Weatherly**! This weather app allows you to search for any city and
 ---
 
 ## 🛠️ Project Structure
-Weatherly/ │ ├── Assets/ # Contains background video assets │ └── Eternal Light V21080p.mp4 ├── app.js # JavaScript for fetching city & weather data ├── style.css # CSS for styling and layout ├── index.html # Main HTML structure └── README.md
+Weatherly
+- Assets
+  - Eternal Light V21080p.mp4
+- app.js
+- style.css
+- index.html
+- README.md
+
 ---
 
 ## ⚙️ How It Works
