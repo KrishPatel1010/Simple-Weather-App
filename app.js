@@ -58,7 +58,7 @@ function selectCity(city) {
 
 // Fetch weather data for a selected city
 async function fetchWeatherData(city) {
-    const weatherUrl = `http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${city}&aqi=yes`;
+    const weatherUrl = `https://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${city}&aqi=yes`;
     try {
         const weatherData = await fetch(weatherUrl);
         const weatherInfo = await weatherData.json();
@@ -76,7 +76,7 @@ async function fetchWeatherData(city) {
         `;
         weatherDataSet.style.display = "block";
     } catch (error) {
-        
+
         console.error("Error fetching weather data:", error);
     }
 }

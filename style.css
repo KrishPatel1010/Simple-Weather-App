@@ -1,23 +1,29 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    background-color: #9984D4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-body {
-    background-color: #9984D4; /* Soft purple background */
-    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
-    color: #333; /* Darker text for better readability */
-}
 #background-video {
-    position: absolute; /* Position it absolutely */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    object-fit: cover; /* Makes sure the video covers the area without distortion */
-    z-index: -1; /* Places the video behind other content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -31,91 +37,89 @@ main {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    background: rgba(227, 139, 139, 0.3); /* White background with transparency */
-    backdrop-filter: blur(3px); /* Blur effect */
+    background: rgba(227, 139, 139, 0.3);
+    backdrop-filter: blur(3px);
     padding: 20px;
-    color: #333; /* Text color */
+    color: #333;
 }
 
 #title {
-    font-size: 24px; /* Slightly larger title */
+    font-size: 24px;
     text-align: center;
-    margin-bottom: 20px; /* Space below the title */
-    color: #0F1020;/* A complementary color for the title */
+    margin-bottom: 20px;
+    color: #0F1020;
 }
 
 .city-input {
-    width: 100%; /* Full width for the input field */
-    padding: 10px 0px 10px 10px; /* Padding inside the input for better spacing */
-    border: 1px solid #464646; /* Light border */
-    border-radius: 5px; /* Rounded corners for the input */
-    font-size: 16px; /* Font size for better readability */
-    transition: border-color 0.3s; /* Smooth transition for border color */
-    background: rgba(255, 255, 255, 0.3); /* White background with transparency */
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid #464646;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(3px);
 }
-.search-icon{
+
+.search-icon {
     top: -28px;
     left: 255px;
     position: relative;
 }
+
 .city-input:focus {
-    border-color: #1f1928; /* Change border color on focus */
-    outline: none; /* Remove default outline */
+    border-color: #1f1928;
+    outline: none;
 }
 
 .dropdown {
-    width: 100%; /* Full width for the dropdown */
+    width: 100%;
     position: relative;
     max-height: 150px;
     display: none;
-    border: 1px solid #ccc; /* Light border */
+    border: 1px solid #ccc;
     overflow-x: hidden;
     overflow-y: auto;
-    border-radius: 5px; /* Rounded corners for the dropdown */
-    background: white; /* White background for dropdown */
-    z-index: 1000; /* Ensure dropdown is on top */
-    background: rgba(201, 128, 128, 0.3); /* White background with transparency */
+    border-radius: 5px;
+    background: rgba(201, 128, 128, 0.3);
     backdrop-filter: blur(3px);
+    z-index: 1000;
 }
 
 .dropdown-item {
-    padding: 10px; /* More padding for clickable items */
+    padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition */
-    background: rgba(255, 255, 255, 0.3); /* White background with transparency */
+    transition: background-color 0.3s;
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(3px);
 }
 
 .dropdown-item:hover {
-    background-color: #d28484; /* Change background on hover */
+    background-color: #d28484;
 }
 
 .dropdown-item.selected {
-    background-color: #e0e0e0; /* Selected item background */
-    font-weight: bold; /* Optional: make the text bold */
+    background-color: #e0e0e0;
+    font-weight: bold;
 }
-
 
 .weather-data {
-    display: none; /* Initially hide the weather data section */
-    border: 1px solid #da8c8c; /* Light border for the weather data section */
-    height: auto; /* Change to auto for responsive height */
-    padding: 10px; /* Padding inside for spacing */
-    margin-top: 20px; /* Space above the weather data */
-    border-radius: 5px; /* Rounded corners for the weather data */
-    background: #f9f9f9; /* Light gray background for contrast */
-    text-align: center; /* Center align text inside */
-    background: rgba(255, 255, 255, 0.3); /* White background with transparency */
+    display: none;
+    border: 1px solid #da8c8c;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(3px);
     font-weight: 600;
+    text-align: center;
 }
-
 
 .weather-img {
     border: 1px solid rgb(103, 83, 83);
-    max-width: 100%; /* Ensure image fits well */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners for images */
-    margin-top: 10px; /* Space above the image */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
 }
