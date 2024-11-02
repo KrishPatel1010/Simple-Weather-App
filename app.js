@@ -1,6 +1,6 @@
 // URLs and API Key
 const CITY_URL = "https://countriesnow.space/api/v0.1/countries/population/cities";
-const WEATHER_API_KEY = "da69256eeede4b40a12145258243110";
+const WEATHER_API_KEY = "your_api_key_here"; //Put you API key here
 
 // Variables
 const cityNames = [];
