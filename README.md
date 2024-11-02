@@ -2,7 +2,7 @@
 
 Welcome to **Weatherly**, a sleek, intuitive weather app that allows you to view real-time weather updates for cities worldwide. Get accurate temperature, humidity, and condition details at your fingertips!
 
-![Weatherly](Assets/screenshot.png)
+![Weatherly](Assets/weatherly.png)
 
 ## 🚀 Features
 - **City Autocomplete Search**: Quickly find cities with a smart, responsive dropdown.
