@@ -16,7 +16,7 @@ Welcome to **Weatherly**, a sleek, intuitive weather app that allows you to view
 - **Font Awesome**: Provides crisp and modern icons to enhance the UI.
 
 ## 🎨 Screenshots
-> Add a screenshot of your app here.
+![Weatherly](Assets/screenshot of output.png)
 
 ## 🖥️ Getting Started
 
