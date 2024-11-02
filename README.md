@@ -20,8 +20,7 @@ Weatherly is a sleek, easy-to-use weather application that lets you search for c
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/Weatherly.git
-    cd Weatherly
+    git clone https://github.com/KrishPatel1010/Simple-Weather-App.git
     ```
 
 2. **Open `index.html`** in your browser, or serve the project using Live Server in VS Code for a better experience.
